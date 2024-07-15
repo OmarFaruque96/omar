@@ -5,23 +5,35 @@ p{font-weight: 400;line-height: 1.6}
 section{margin-bottom: 48px}
 #omar-header{margin: 48px 0px;}
 #omar-header .container .wrapper{width: 100%;display: flex;justify-content: space-between;align-items: center;}
-#omar-header .container .wrapper .logo img{width: 60px;height: 60px;border-radius: 100%;}
-#omar-header .container .wrapper nav ul li{list-style: none; display: inline-block; margin-left: 16px}
-#omar-header .container .wrapper nav ul li a{font-size: 16px; color: #0000008c;}
+#omar-header .container .wrapper .logo {width: 60px;height: 60px;border-radius: 15px;overflow: hidden;}
+#omar-header .container .wrapper .logo img{max-width: 100%;height: auto;}
+#omar-header .container .wrapper nav ul li{list-style: none; display: flex; align-items: center;margin-left: 16px}
+#omar-header .container .wrapper nav ul li a{text-underline-offset: 3px;font-size: 16px; color: #000000;text-decoration: none;margin-right: 10px;transition: 0.3s}
+#omar-header .container .wrapper nav ul li a:hover{text-decoration: underline;}
 #omar-intro h1{font-size: 18px;margin-bottom: 16px}
 #omar-intro p{font-size: 16px;}
 #omar-about p:first-child, #omar-bio-history p:first-child, #omar-portfolios p:first-child{margin-bottom: 16px}
 #omar-about .card, #omar-bio-history .card{border: 1px solid #0000001a;border-radius: 16px;padding: 20px;}
 #omar-about .card h2{font-size: 17px;margin-bottom: 10px;}
+#omar-about .card a{text-decoration: none;color: #0d0d0d;}
+#omar-about .card a:hover{text-decoration: underline;}
 #omar-about .card span{color: #0d0d0d8c;}
 #omar-about .card p{margin-top: 18px}
 #omar-bio-history ul li{list-style: none;display: flex;margin-bottom: 10px;gap: 14px;}
+#omar-bio-history ul li img{filter: opacity(0.5);width: 16px;margin-top: 3px;}
 #omar-bio-history ul li a{text-decoration: none; font-weight: 500;color: #0d0d0d}
 #omar-bio-history ul li a:hover{text-decoration: underline;}
 #omar-skills .wrapper{display: flex;flex-wrap: wrap;gap: 10px;}
 #omar-skills a{ display: inline-block; border: 1px solid #0000001a; padding: 8px; border-radius: 4px; }
 #omar-skills a:hover{cursor: pointer;background: #0d0d0d; color: #fff}
-#omar-portfolios .items{}
-#omar-portfolios .items .sample{}
-#omar-portfolios .items .sample h3{}
-#omar-portfolios .items .sample p{}
+#omar-portfolios .items{display: grid;grid-template-columns: repeat(2, 1fr);gap: 12px;}
+#omar-portfolios .items .sample{border: 1px solid #0000001a;border-radius: 10px;padding: 10px 18px;}
+#omar-portfolios .items .sample:hover{border: 1px solid #00000080;}
+#omar-portfolios .items .sample h3{font-size: 16px;font-weight: 500;}
+#omar-portfolios .items .sample h3 a{color: #0d0d0dc7;text-decoration: none;}
+#omar-portfolios .items .sample h3 a:hover{text-decoration: underline;}
+#omar-portfolios .items .sample p{font-size: 14px;color: #0000008c;}
+footer{margin-bottom: 40px}
+footer nav ul li{list-style: none;margin-bottom: 10px}
+footer nav ul li a{text-decoration: none;color: #0000008c;}
+footer nav ul li a:hover{text-decoration: underline;color: #000000;}
